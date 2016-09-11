@@ -1,5 +1,6 @@
 package com.wheat.mobile.imsample.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
@@ -56,6 +57,11 @@ public class LoginActivity extends FragmentActivity{
             @Override
             public void onSuccess() {
                 Log.d(TAG, "login: onSuccess");
+                Intent intent = new Intent(LoginActivity.this,
+                        MainActivity.class);
+                startActivity(intent);
+
+                finish();
             }
 
             @Override

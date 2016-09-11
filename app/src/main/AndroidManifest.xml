@@ -46,6 +46,12 @@
             </intent-filter>
         </receiver>
 
+        <receiver android:name=".activity.receiver.CallReceiver">
+            <intent-filter>
+                <action android:name="com.hyphenate.action.incomingcall"/>
+            </intent-filter>
+        </receiver>
+
         <activity android:name=".activity.MainActivity">
 
         </activity>
@@ -56,6 +62,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.VideoCallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
         </activity>
     </application>
 
