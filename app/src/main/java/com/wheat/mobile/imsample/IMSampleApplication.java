@@ -1,7 +1,6 @@
 package com.wheat.mobile.imsample;
 
 import android.app.Application;
-import android.content.BroadcastReceiver;
 import android.content.IntentFilter;
 
 import com.hyphenate.chat.EMClient;
